@@ -9,23 +9,23 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-return [
+return array(
     // 数据库类型
     'type'            => 'mysql',
     // 服务器地址
     'hostname'        => '127.0.0.1',
     // 数据库名
-    'database'        => '',
+    'database'        => 'php',
     // 用户名
     'username'        => 'root',
     // 密码
-    'password'        => '',
+    'password'        => '123456',
     // 端口
-    'hostport'        => '',
+    'hostport'        => '3306',
     // 连接dsn
     'dsn'             => '',
     // 数据库连接参数
-    'params'          => [],
+    'params'          => array(),
     // 数据库编码默认采用utf8
     'charset'         => 'utf8',
     // 数据库表前缀
@@ -59,5 +59,5 @@ return [
     // 是否需要断线重连
     'break_reconnect' => false,
     // 断线标识字符串
-    'break_match_str' => [],
-];
+    'break_match_str' => array(),
+);

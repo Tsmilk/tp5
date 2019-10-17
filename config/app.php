@@ -13,7 +13,7 @@
 // | 应用设置
 // +----------------------------------------------------------------------
 
-return [
+return array(
     // 应用名称
     'app_name'               => '',
     // 应用地址
@@ -27,7 +27,7 @@ return [
     // 入口自动绑定模块
     'auto_bind_module'       => false,
     // 注册的根命名空间
-    'root_namespace'         => [],
+    'root_namespace'         => array(),
     // 默认输出类型
     'default_return_type'    => 'html',
     // 默认AJAX 数据返回格式,可选json xml ...
@@ -56,7 +56,7 @@ return [
     // 默认模块名
     'default_module'         => 'index',
     // 禁止访问模块
-    'deny_module_list'       => ['common'],
+    'deny_module_list'       => array('common'),
     // 默认控制器名
     'default_controller'     => 'Index',
     // 默认操作名
@@ -81,7 +81,7 @@ return [
     // PATHINFO变量名 用于兼容模式
     'var_pathinfo'           => 's',
     // 兼容PATH_INFO获取
-    'pathinfo_fetch'         => ['ORIG_PATH_INFO', 'REDIRECT_PATH_INFO', 'REDIRECT_URL'],
+    'pathinfo_fetch'         => array('ORIG_PATH_INFO', 'REDIRECT_PATH_INFO', 'REDIRECT_URL'),
     // pathinfo分隔符
     'pathinfo_depr'          => '/',
     // HTTPS代理标识
@@ -121,13 +121,13 @@ return [
     // 请求缓存有效期
     'request_cache_expire'   => null,
     // 全局请求缓存排除规则
-    'request_cache_except'   => [],
+    'request_cache_except'   => array(),
     // 是否开启路由缓存
     'route_check_cache'      => false,
     // 路由缓存的Key自定义设置（闭包），默认为当前URL和请求类型的md5
     'route_check_cache_key'  => '',
     // 路由缓存类型及参数
-    'route_cache_option'     => [],
+    'route_cache_option'     => array(),
 
     // 默认跳转页面对应的模板文件
     'dispatch_success_tmpl'  => Env::get('think_path') . 'tpl/dispatch_jump.tpl',
@@ -143,4 +143,4 @@ return [
     // 异常处理handle类 留空使用 \think\exception\Handle
     'exception_handle'       => '',
 
-];
+);

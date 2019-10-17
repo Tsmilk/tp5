@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="/php/public/css/user/user.css">
+</head>
+<body>
+    <div class="tit">登&nbsp;&nbsp;录</div>
+    <div class="user_form">
+        <form action="/user/login" method="post">
+            <dl>
+                <dt>
+                    <p>用户名：<input type="text" name="username"></p>
+                </dt>
+                <dt>
+                    <p>密&nbsp;&nbsp;&nbsp;&nbsp;码：<input type="password" name="password"></p>
+                </dt>
+                <dt>
+                    <p>
+                        验证码：
+                        <input type="text" id="inputPassword" class="yzm" errormsg="请填写5位验证码" nullmsg="请填写验证码" datatype="*5-5" name="verify">
+                        <img src="/php/user/verify" alt="captcha" />
+                    </p>
+                </dt>
+                <dt>
+                    <p><a href="{:url('login/register')}">暂无账号? 立即注册</a></p>
+                </dt>
+                <dt>
+                    <span><input type="submit" value="登录"></span>
+                    <span><input type="reset" value="重置"></span>
+                </dt>
+            </dl>
+        </form>
+    </div>
+    <!--<script src="/public/bootstrap/js/bootstrap.min.js"></script>-->
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="/php/public/css/user/user.css">
+</head>
+<body>
+    <div class="tit">注&nbsp;&nbsp;册</div>
+    <div class="user_form">
+        <form action="/user/register" method="post">
+            <dl>
+                <dt>
+                    <p>用&nbsp;户&nbsp;名：<input type="text" name="username"></p>
+                </dt>
+                <dt>
+                    <p>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：<input type="password" name="password"></p>
+                </dt>
+                <dt>
+                    <p>确认密码：<input type="password" name="password"></p></p>
+                </dt>
+                <dt>
+                    <p><a href="{:url('login/register')}">已有账号? 点击登录</a></p>
+                </dt>
+                <dt>
+                    <span><input type="submit" value="注册"></span>
+                    <span><input type="reset" value="重置"></span>
+                </dt>
+            </dl>
+        </form>
+    </div>
+</body>
+</html>
